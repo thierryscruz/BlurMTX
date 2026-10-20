@@ -32,28 +32,28 @@ O **BlurMTX** transforma qualquer sala multiplayer do clássico **Blur (2010)** 
 
 ### Pré-requisitos
 1. Jogo **Blur (2010)** instalado no PC.
-2. **Python 3.8 ou superior** instalado no Windows ([Download no python.org](https://www.python.org/downloads/)). *Marque a opção "Add Python to PATH" durante a instalação.*
+2. *(Opcional)* Se não quiser instalar o Python, utilize diretamente o executável **`BlurMTX.exe`** disponível na aba de **Releases** do GitHub!
 
 ---
 
-### Instalação em 2 Passos Simples
+### Instalação e Inicialização em 2 Passos
 
-#### Passo 1: Instalar o Plugin no Jogo
+#### Passo 1: Instalar o Plugin no Jogo (Apenas na 1ª vez)
 Dê um duplo clique no arquivo:
 ```cmd
 instalar_no_jogo.bat
 ```
-> O script localizará automaticamente o diretório do Blur e registrará o plugin `blur_mtx.lua`.
+> O script localizará automaticamente o diretório do Blur (`E:\Blur(tm)` ou padrão) e registrará o plugin `blur_mtx.lua`.
 
-#### Passo 2: Iniciar o Servidor & Painel
-Dê um duplo clique no arquivo:
-```cmd
-Iniciar_BlurMTX_Completo.bat
-```
-Pronto! Este atalho iniciará tudo de uma vez:
-1. 🌐 O **Web Dashboard** abrirá no seu navegador em `http://localhost:8080`.
-2. 🎮 A **Janela de Controle (GUI)** abrirá para você personalizar pistas e regras.
-3. ⚡ O **Orquestrador de Telemetria** começará a registrar as corridas.
+#### Passo 2: Iniciar a Suíte BlurMTX
+Você pode iniciar de duas formas:
+* **Opção A (Sem Python instalado — Recomendado):** Dê duplo clique em **`BlurMTX.exe`**!
+* **Opção B (Via Python):** Dê duplo clique em **`Iniciar_BlurMTX_Completo.bat`**.
+
+Pronto! Ao iniciar:
+1. 🌐 O **Web Dashboard** abrirá automaticamente no seu navegador em `http://localhost:8080`.
+2. 🎮 A **Janela de Controle (GUI)** abrirá para você personalizar pistas, voltas e presets.
+3. ⚡ O **Orquestrador de Telemetria** começará a registrar todas as corridas e estatísticas no SQLite.
 
 Agora basta abrir o Blur e criar uma sala de corrida multiplayer!
 

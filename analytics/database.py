@@ -22,7 +22,10 @@ if hasattr(sys.stdout, "reconfigure"):
     except Exception:
         pass
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+if getattr(sys, "frozen", False):
+    BASE_DIR = Path(sys.executable).resolve().parent
+else:
+    BASE_DIR = Path(__file__).resolve().parent.parent
 DB_PATH = BASE_DIR / "blur_mtx.db"
 
 # Pontuação oficial estilo Fórmula 1 para o Top 10

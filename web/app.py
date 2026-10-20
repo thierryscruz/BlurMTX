@@ -26,7 +26,10 @@ if hasattr(sys.stdout, "reconfigure"):
     except Exception:
         pass
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+if getattr(sys, "frozen", False):
+    BASE_DIR = Path(sys.executable).resolve().parent
+else:
+    BASE_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BASE_DIR))
 
 from analytics.database import get_leaderboard, get_recent_matches, get_all_combat_matrix, get_db

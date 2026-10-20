@@ -17,3 +17,6 @@ telemetry_last_match.json
 .idea/
 *.sublime-project
 *.sublime-workspace
+
+# Release Zip
+*.zip

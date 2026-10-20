@@ -19,7 +19,10 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+if getattr(sys, "frozen", False):
+    BASE_DIR = Path(sys.executable).resolve().parent
+else:
+    BASE_DIR = Path(__file__).resolve().parent.parent
 CONFIG_PATH = BASE_DIR / "blur_mtx.json"
 TRACKS_PATH = BASE_DIR / "tracks.json"
 PRESETS_PATH = BASE_DIR / "presets.json"
