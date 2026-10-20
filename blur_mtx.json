@@ -5,6 +5,7 @@
     "countdown_seconds": 20,
     "auto_start_enabled": false,
     "default_laps": 3,
+    "default_car_class": "B",
     "anti_afk_enabled": true,
     "anti_afk_timeout_seconds": 30
   },

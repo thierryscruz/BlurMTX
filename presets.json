@@ -7,7 +7,8 @@
       "auto_start_enabled": false,
       "countdown_seconds": 20,
       "default_laps": 15,
-      "rotation_mode": "sequential"
+      "rotation_mode": "sequential",
+      "default_car_class": "A"
     },
     "powerup_options": {
       "master_enabled": true,
@@ -45,7 +46,8 @@
       "auto_start_enabled": true,
       "countdown_seconds": 15,
       "default_laps": 3,
-      "rotation_mode": "random"
+      "rotation_mode": "random",
+      "default_car_class": "B"
     },
     "powerup_options": {
       "master_enabled": true,
@@ -83,7 +85,8 @@
       "auto_start_enabled": false,
       "countdown_seconds": 20,
       "default_laps": 5,
-      "rotation_mode": "sequential"
+      "rotation_mode": "sequential",
+      "default_car_class": "A"
     },
     "powerup_options": {
       "master_enabled": true,
@@ -121,7 +124,8 @@
       "auto_start_enabled": false,
       "countdown_seconds": 20,
       "default_laps": 4,
-      "rotation_mode": "sequential"
+      "rotation_mode": "sequential",
+      "default_car_class": "B"
     },
     "powerup_options": {
       "master_enabled": true,
@@ -163,7 +167,8 @@
       "auto_start_enabled": false,
       "countdown_seconds": 20,
       "default_laps": 3,
-      "rotation_mode": "sequential"
+      "rotation_mode": "sequential",
+      "default_car_class": "B"
     },
     "powerup_options": {
       "master_enabled": true,
