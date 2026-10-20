@@ -1,0 +1,146 @@
+{
+  "server": {
+    "auto_rotation_enabled": true,
+    "rotation_mode": "sequential",
+    "countdown_seconds": 20,
+    "auto_start_enabled": false,
+    "default_laps": 3,
+    "anti_afk_enabled": true,
+    "anti_afk_timeout_seconds": 30
+  },
+  "powerup_options": {
+    "master_enabled": true,
+    "respawn_rate": "Normal",
+    "random_powerups": false,
+    "nitro": true,
+    "barge": true,
+    "shunt": true,
+    "bolt": true,
+    "repair": true,
+    "shield": true,
+    "mine": true,
+    "shock": true
+  },
+  "advanced_options": {
+    "damage": "Medium",
+    "respawn": true,
+    "handicap": "High",
+    "timeout": true,
+    "mods": true,
+    "upgrades": true,
+    "ai": false
+  },
+  "gameplay": {
+    "bop_enabled": true,
+    "bop_target_class": "A",
+    "bop_class_d_multiplier": 1.48,
+    "bop_class_c_multiplier": 1.28,
+    "bop_class_b_multiplier": 1.14,
+    "all_classes_unlocked": true
+  },
+  "network": {
+    "bind_ip": "auto",
+    "target_ips": "10.1.1.31, 10.1.1.88"
+  },
+  "combat_telemetry": {
+    "enabled": true,
+    "log_hits": true,
+    "save_to_database": true
+  },
+  "discord": {
+    "webhook_enabled": false,
+    "webhook_url": ""
+  },
+  "rotation_playlist": [
+    {
+      "track_id": "uk_brighton",
+      "enabled": false,
+      "laps": 2
+    },
+    {
+      "track_id": "spa_barcelona_oval",
+      "enabled": false,
+      "laps": 3
+    },
+    {
+      "track_id": "spa_barcelona_gracia",
+      "enabled": false,
+      "laps": 3
+    },
+    {
+      "track_id": "uk_london_hackney",
+      "enabled": false,
+      "laps": 3
+    },
+    {
+      "track_id": "spa_barcelona_bowl_multiplayer",
+      "enabled": false,
+      "laps": 3
+    },
+    {
+      "track_id": "jpn_tokyo_shutoko",
+      "enabled": false,
+      "laps": 3
+    },
+    {
+      "track_id": "jpn_mharuna",
+      "enabled": false,
+      "laps": 1
+    },
+    {
+      "track_id": "usa_la_river",
+      "enabled": false,
+      "laps": 3
+    },
+    {
+      "track_id": "usa_la_downtown",
+      "enabled": false,
+      "laps": 3
+    },
+    {
+      "track_id": "usa_la_downtown_multiplayer",
+      "enabled": false,
+      "laps": 3
+    },
+    {
+      "track_id": "usa_la_longbeachdocks",
+      "enabled": false,
+      "laps": 3
+    },
+    {
+      "track_id": "usa_la_observatory",
+      "enabled": false,
+      "laps": 2
+    },
+    {
+      "track_id": "usa_la_multiplayer_highrise",
+      "enabled": false,
+      "laps": 3
+    },
+    {
+      "track_id": "usa_amboy",
+      "enabled": false,
+      "laps": 2
+    },
+    {
+      "track_id": "usa_amboy_multiplayer",
+      "enabled": false,
+      "laps": 3
+    },
+    {
+      "track_id": "usa_ny_dumbo",
+      "enabled": false,
+      "laps": 3
+    },
+    {
+      "track_id": "usa_sanfran_russianhill",
+      "enabled": false,
+      "laps": 3
+    },
+    {
+      "track_id": "usa_sanfran_sausalito",
+      "enabled": false,
+      "laps": 2
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.spec
+
+# SQLite
+*.db-journal
+*.db-wal
+
+# Logs & Temp
+*.log
+telemetry_last_match.json
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
