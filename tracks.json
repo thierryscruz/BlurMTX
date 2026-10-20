@@ -1,20 +1,64 @@
 [
-  { "id": "spa_barcelona_oval", "name": "Barcelona — Oval", "location": "Espanha", "type": "circuit", "default_laps": 3, "min_laps": 2, "max_laps": 5 },
-  { "id": "spa_barcelona_gracia", "name": "Barcelona — Gràcia", "location": "Espanha", "type": "circuit", "default_laps": 3, "min_laps": 2, "max_laps": 5 },
-  { "id": "spa_barcelona_bowl_multiplayer", "name": "Barcelona — Bowl (Multiplayer)", "location": "Espanha", "type": "circuit", "default_laps": 3, "min_laps": 2, "max_laps": 5 },
-  { "id": "uk_brighton", "name": "Brighton — Coastal Cruise", "location": "Reino Unido", "type": "circuit", "default_laps": 2, "min_laps": 2, "max_laps": 5 },
-  { "id": "uk_london_hackney", "name": "Londres — Hackney", "location": "Reino Unido", "type": "circuit", "default_laps": 3, "min_laps": 2, "max_laps": 5 },
-  { "id": "jpn_tokyo_shutoko", "name": "Tóquio — Shutoko Expressway", "location": "Japão", "type": "circuit", "default_laps": 3, "min_laps": 2, "max_laps": 5 },
-  { "id": "jpn_mharuna", "name": "Monte Haruna — Touge Pass", "location": "Japão", "type": "sprint", "default_laps": 1, "min_laps": 1, "max_laps": 1 },
-  { "id": "usa_la_river", "name": "Los Angeles — LA River", "location": "EUA", "type": "circuit", "default_laps": 3, "min_laps": 2, "max_laps": 5 },
-  { "id": "usa_la_downtown", "name": "Los Angeles — Downtown", "location": "EUA", "type": "circuit", "default_laps": 3, "min_laps": 2, "max_laps": 5 },
-  { "id": "usa_la_downtown_multiplayer", "name": "Los Angeles — Downtown Storm Drain", "location": "EUA", "type": "circuit", "default_laps": 3, "min_laps": 2, "max_laps": 5 },
-  { "id": "usa_la_longbeachdocks", "name": "Los Angeles — Long Beach Docks", "location": "EUA", "type": "circuit", "default_laps": 3, "min_laps": 2, "max_laps": 5 },
-  { "id": "usa_la_observatory", "name": "Los Angeles — Griffith Observatory", "location": "EUA", "type": "circuit", "default_laps": 2, "min_laps": 2, "max_laps": 5 },
-  { "id": "usa_la_multiplayer_highrise", "name": "Los Angeles — Highrise Rooftops", "location": "EUA", "type": "circuit", "default_laps": 3, "min_laps": 2, "max_laps": 5 },
-  { "id": "usa_amboy", "name": "Amboy — Route 66 Desert", "location": "EUA", "type": "circuit", "default_laps": 2, "min_laps": 2, "max_laps": 5 },
-  { "id": "usa_amboy_multiplayer", "name": "Amboy — Badlands (Multiplayer)", "location": "EUA", "type": "circuit", "default_laps": 3, "min_laps": 2, "max_laps": 5 },
-  { "id": "usa_ny_dumbo", "name": "Nova York — DUMBO Brooklyn", "location": "EUA", "type": "circuit", "default_laps": 3, "min_laps": 2, "max_laps": 5 },
-  { "id": "usa_sanfran_russianhill", "name": "San Francisco — Russian Hill", "location": "EUA", "type": "circuit", "default_laps": 3, "min_laps": 2, "max_laps": 5 },
-  { "id": "usa_sanfran_sausalito", "name": "San Francisco — Sausalito Coast", "location": "EUA", "type": "circuit", "default_laps": 2, "min_laps": 2, "max_laps": 5 }
+  { "id": "usa_la_observatory", "name": "Hollywood Hills — Circuito Clássico", "location": "Hollywood Hills (EUA)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "usa_la_observatory_1", "name": "Hollywood Hills — Griffith Descent / Hollywood Rift", "location": "Hollywood Hills (EUA)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "usa_la_observatory_2", "name": "Hollywood Hills — Downtown Vista", "location": "Hollywood Hills (EUA)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+
+  { "id": "spa_barcelona_oval", "name": "Barcelona — Oval Clássico", "location": "Barcelona (Espanha)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "spa_barcelona_oval_1", "name": "Barcelona — Fenda da Cidade (Oval 1)", "location": "Barcelona (Espanha)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "spa_barcelona_oval_2", "name": "Barcelona — Speedway (Oval 2)", "location": "Barcelona (Espanha)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "spa_barcelona_gracia", "name": "Barcelona — Gràcia", "location": "Barcelona (Espanha)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "spa_barcelona_gracia_1", "name": "Barcelona — Passeig de Gràcia", "location": "Barcelona (Espanha)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "spa_barcelona_gracia_2", "name": "Barcelona — El Carmel Heights", "location": "Barcelona (Espanha)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "spa_barcelona_gracia_5", "name": "Barcelona — Catalan Climb", "location": "Barcelona (Espanha)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "spa_barcelona_bowl_multiplayer", "name": "Barcelona — Bowl / La Carretera (Arena)", "location": "Barcelona (Espanha)", "type": "arena", "default_laps": 3, "min_laps": 1, "max_laps": 10 },
+
+  { "id": "uk_brighton", "name": "Brighton — Coastal Cruise", "location": "Brighton (Reino Unido)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "uk_brighton_1", "name": "Brighton — Promenade Loop", "location": "Brighton (Reino Unido)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "uk_brighton_2", "name": "Brighton — Seafront Strip", "location": "Brighton (Reino Unido)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "uk_brighton_3", "name": "Brighton — Coastal Cruise (Rota 3)", "location": "Brighton (Reino Unido)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "uk_brighton_5", "name": "Brighton — Pier View (Rota 5)", "location": "Brighton (Reino Unido)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+
+  { "id": "uk_london_hackney", "name": "Londres — Hackney", "location": "Londres (Reino Unido)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "uk_london_hackney_1", "name": "Londres — Shoreditch Sweep", "location": "Londres (Reino Unido)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "uk_london_hackney_2", "name": "Londres — The Braids / Urban Belt", "location": "Londres (Reino Unido)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "uk_london_hackney_4", "name": "Londres — Central Sprint", "location": "Londres (Reino Unido)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+
+  { "id": "jpn_tokyo_shutoko", "name": "Tóquio — Shutoko Expressway", "location": "Tóquio (Japão)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "jpn_tokyo_shutoko_2", "name": "Tóquio — Rota Litoral (Shutoko 2)", "location": "Tóquio (Japão)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "jpn_tokyo_shutoko_4", "name": "Tóquio — Wangan-sen / Shuto Underpass", "location": "Tóquio (Japão)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+
+  { "id": "jpn_mharuna", "name": "Monte Haruna — Touge Pass (Sprint)", "location": "Monte Haruna (Japão)", "type": "sprint", "default_laps": 1, "min_laps": 1, "max_laps": 1 },
+  { "id": "jpn_mharuna_1", "name": "Monte Haruna — Touge Descent (Sprint)", "location": "Monte Haruna (Japão)", "type": "sprint", "default_laps": 1, "min_laps": 1, "max_laps": 1 },
+
+  { "id": "usa_amboy", "name": "Amboy — Rota 66 Desert", "location": "Amboy (EUA)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "usa_amboy_1", "name": "Amboy — Route 66 (Rota 1)", "location": "Amboy (EUA)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "usa_amboy_3", "name": "Amboy — Badlands Traverse", "location": "Amboy (EUA)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "usa_amboy_multiplayer", "name": "Amboy — The Dust Bowl (Arena)", "location": "Amboy (EUA)", "type": "arena", "default_laps": 3, "min_laps": 1, "max_laps": 10 },
+
+  { "id": "usa_la_downtown", "name": "Los Angeles — Downtown", "location": "Los Angeles (EUA)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "usa_la_downtown_1", "name": "Los Angeles — The Money Run", "location": "Los Angeles (EUA)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "usa_la_downtown_3", "name": "Los Angeles — Bunker Hill", "location": "Los Angeles (EUA)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "usa_la_downtown_4", "name": "Los Angeles — Highrise Ring", "location": "Los Angeles (EUA)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "usa_la_downtown_6", "name": "Los Angeles — Auto-estrada Harbor", "location": "Los Angeles (EUA)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "usa_la_downtown_multiplayer", "name": "Los Angeles — Downtown Storm Drain (Arena)", "location": "Los Angeles (EUA)", "type": "arena", "default_laps": 3, "min_laps": 1, "max_laps": 10 },
+  { "id": "usa_la_multiplayer_highrise", "name": "Los Angeles — Highrise Rooftops (Arena)", "location": "Los Angeles (EUA)", "type": "arena", "default_laps": 3, "min_laps": 1, "max_laps": 10 },
+
+  { "id": "usa_la_longbeachdocks", "name": "Los Angeles — Long Beach Docks", "location": "Los Angeles (EUA)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "usa_la_longbeachdocks_2", "name": "Los Angeles — Pacific Reach", "location": "Los Angeles (EUA)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "usa_la_longbeachdocks_3", "name": "Los Angeles — Cargo Run / Container Island", "location": "Los Angeles (EUA)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+
+  { "id": "usa_la_river", "name": "Los Angeles — LA River", "location": "Los Angeles (EUA)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "usa_la_river_3", "name": "Los Angeles — Concrete Basin", "location": "Los Angeles (EUA)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "usa_la_river_6", "name": "Los Angeles — Stormdrain Surge / Glendale", "location": "Los Angeles (EUA)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+
+  { "id": "usa_ny_dumbo", "name": "Nova York — DUMBO Brooklyn", "location": "Nova York (EUA)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "usa_ny_dumbo_2", "name": "Nova York — Vista de Manhattan (DUMBO 2)", "location": "Nova York (EUA)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "usa_ny_dumbo_3", "name": "Nova York — Brooklyn Tour (DUMBO 3)", "location": "Nova York (EUA)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+
+  { "id": "usa_sanfran_russianhill", "name": "San Francisco — Russian Hill", "location": "San Francisco (EUA)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "usa_sanfran_russianhill_1", "name": "San Francisco — Russian Steppes / Cable Car", "location": "San Francisco (EUA)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+
+  { "id": "usa_sanfran_sausalito", "name": "San Francisco — Sausalito Coast", "location": "San Francisco (EUA)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "usa_sanfran_sausalito_1", "name": "San Francisco — Golden Gate Rush", "location": "San Francisco (EUA)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 },
+  { "id": "usa_sanfran_sausalito_2", "name": "San Francisco — Bay Area Tour", "location": "San Francisco (EUA)", "type": "circuit", "default_laps": 3, "min_laps": 1, "max_laps": 99 }
 ]

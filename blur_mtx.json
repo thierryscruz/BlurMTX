@@ -53,94 +53,254 @@
   },
   "rotation_playlist": [
     {
-      "track_id": "uk_brighton",
-      "enabled": false,
-      "laps": 2
+      "track_id": "usa_la_observatory",
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "usa_la_observatory_1",
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "usa_la_observatory_2",
+      "enabled": true,
+      "laps": 3
     },
     {
       "track_id": "spa_barcelona_oval",
-      "enabled": false,
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "spa_barcelona_oval_1",
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "spa_barcelona_oval_2",
+      "enabled": true,
       "laps": 3
     },
     {
       "track_id": "spa_barcelona_gracia",
-      "enabled": false,
+      "enabled": true,
       "laps": 3
     },
     {
-      "track_id": "uk_london_hackney",
-      "enabled": false,
+      "track_id": "spa_barcelona_gracia_1",
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "spa_barcelona_gracia_2",
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "spa_barcelona_gracia_5",
+      "enabled": true,
       "laps": 3
     },
     {
       "track_id": "spa_barcelona_bowl_multiplayer",
-      "enabled": false,
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "uk_brighton",
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "uk_brighton_1",
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "uk_brighton_2",
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "uk_brighton_3",
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "uk_brighton_5",
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "uk_london_hackney",
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "uk_london_hackney_1",
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "uk_london_hackney_2",
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "uk_london_hackney_4",
+      "enabled": true,
       "laps": 3
     },
     {
       "track_id": "jpn_tokyo_shutoko",
-      "enabled": false,
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "jpn_tokyo_shutoko_2",
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "jpn_tokyo_shutoko_4",
+      "enabled": true,
       "laps": 3
     },
     {
       "track_id": "jpn_mharuna",
-      "enabled": false,
+      "enabled": true,
       "laps": 1
     },
     {
-      "track_id": "usa_la_river",
-      "enabled": false,
+      "track_id": "jpn_mharuna_1",
+      "enabled": true,
+      "laps": 1
+    },
+    {
+      "track_id": "usa_amboy",
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "usa_amboy_1",
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "usa_amboy_3",
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "usa_amboy_multiplayer",
+      "enabled": true,
       "laps": 3
     },
     {
       "track_id": "usa_la_downtown",
-      "enabled": false,
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "usa_la_downtown_1",
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "usa_la_downtown_3",
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "usa_la_downtown_4",
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "usa_la_downtown_6",
+      "enabled": true,
       "laps": 3
     },
     {
       "track_id": "usa_la_downtown_multiplayer",
-      "enabled": false,
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "usa_la_multiplayer_highrise",
+      "enabled": true,
       "laps": 3
     },
     {
       "track_id": "usa_la_longbeachdocks",
-      "enabled": false,
+      "enabled": true,
       "laps": 3
     },
     {
-      "track_id": "usa_la_observatory",
-      "enabled": false,
-      "laps": 2
-    },
-    {
-      "track_id": "usa_la_multiplayer_highrise",
-      "enabled": false,
+      "track_id": "usa_la_longbeachdocks_2",
+      "enabled": true,
       "laps": 3
     },
     {
-      "track_id": "usa_amboy",
-      "enabled": false,
-      "laps": 2
+      "track_id": "usa_la_longbeachdocks_3",
+      "enabled": true,
+      "laps": 3
     },
     {
-      "track_id": "usa_amboy_multiplayer",
-      "enabled": false,
+      "track_id": "usa_la_river",
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "usa_la_river_3",
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "usa_la_river_6",
+      "enabled": true,
       "laps": 3
     },
     {
       "track_id": "usa_ny_dumbo",
-      "enabled": false,
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "usa_ny_dumbo_2",
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "usa_ny_dumbo_3",
+      "enabled": true,
       "laps": 3
     },
     {
       "track_id": "usa_sanfran_russianhill",
-      "enabled": false,
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "usa_sanfran_russianhill_1",
+      "enabled": true,
       "laps": 3
     },
     {
       "track_id": "usa_sanfran_sausalito",
-      "enabled": false,
-      "laps": 2
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "usa_sanfran_sausalito_1",
+      "enabled": true,
+      "laps": 3
+    },
+    {
+      "track_id": "usa_sanfran_sausalito_2",
+      "enabled": true,
+      "laps": 3
     }
   ]
 }
