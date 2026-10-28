@@ -1,3 +1,21 @@
+# BlurMTX v2.0.0 — 28/10/2026
+
+- Racing Control Center migrado para Qt/PySide6, com cenário noturno e logo original de Blur.
+- Janela inicial 800×600, redimensionável pelas oito bordas/cantos; opção 1024×768 nas configurações. Ajuste à área útil, páginas sem rolagem e atalhos compactos em janelas estreitas.
+- Crédito discreto “Developed By: Treex™” no rodapé lateral.
+- Publicação dos destinos LAN pelo aplicativo para organizadores autorizados, com credencial protegida pelo Windows e controle de conflitos por SHA. Clientes continuam lendo o link público sem login.
+- Perfil LAN com nome e avatar local; troca entre participantes via UDP 8081. Validação visual entre dois PCs ainda pendente.
+- Persistência local dos slots do Mod Shop por cliente. Confirmar no jogo o ciclo de fechar/reabrir.
+- Coleta parcial de confrontos humanos quando apenas a linha local é válida, com cobertura identificada; recuperação da última captura recusada somente quando há evidências correspondentes.
+- Encerramento do painel/coletor ao fechar o aplicativo, porta exclusiva no Windows e proteção contra módulos antigos externos ao executável.
+
+Validação: suíte Python, testes Qt de geometria/entrada/redimensionamento, monitor pequeno simulado, escalas de tela distintas, Lua 5.1, controlador JavaScript, API/banco, instalação autônoma e ZIP real em outra pasta. O pacote mantém o mesmo executável já testado e instalado localmente.
+
+Limites: sem identificação de armas, sem BoP físico e sem sincronização central de bancos. A coleta LAN, rotação entre dois PCs, perfis e persistência do Mod Shop ainda exigem as conferências no jogo descritas no README. O executável não é assinado digitalmente. Jogo e AMAX não acompanham o pacote.
+
+
+---
+
 # BlurMTX v1.4.0 — 28/10/2026
 
 - Launcher com botão Iniciar Blur, configuração LAN e painel Web explícito; servidor sem CMD.
