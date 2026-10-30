@@ -1,72 +1,71 @@
-# BlurMTX v2.0.0 — Racing Control Center
+# BlurMTX v2.1.0 — Racing Control Center
 
-**[Baixar BlurMTX v2.0.0 para Windows](https://github.com/thierryscruz/BlurMTX/releases/tag/v2.0.0)**
+**[Baixar BlurMTX v2.1.0 para Windows](https://github.com/thierryscruz/BlurMTX/releases/tag/v2.1.0)**
 
-Este repositório distribui somente o compilado. Baixe `BlurMTX-v2.0.0-Windows.zip` em Releases e extraia o conteúdo. Os arquivos automáticos “Source code” do GitHub não contêm o aplicativo. Python e Qt já estão incluídos no executável.
+Aplicativo para instalar e iniciar o Blur com integração LAN, perfil local, regras de corrida, playlist e estatísticas web. O pacote Windows inclui Python, Qt e o runtime Lua necessário; não exige AMAX Emu nem plugins copiados de outra máquina. O jogo e seus dados não acompanham a distribuição.
 
-## Instalação e abertura
+## Instalar ou atualizar
 
-1. Tenha Blur e AMAX compatível instalados, incluindo `lua5.1.dll` e o carregador Lua existente.
-2. Abra `BlurMTX.exe`, selecione a pasta que contém `Blur.exe` e use **Instalar / Atualizar mod** com o jogo fechado.
-3. Configure a conexão LAN neste PC e use **Iniciar jogo**. O mesmo aplicativo serve para host e clientes; a sala é criada ou acessada dentro do jogo.
-4. Use **Painel web** quando quiser abrir as regras e estatísticas no navegador. O navegador não abre automaticamente ao iniciar o aplicativo.
+1. Feche o Blur e o BlurMTX.
+2. Baixe `BlurMTX-v2.1.0-Windows.zip` em Releases e extraia em uma pasta. Os downloads automáticos “Source code” do GitHub não contêm o executável.
+3. Execute o novo `BlurMTX.exe`, selecione a pasta que contém `Blur.exe` e clique em **Instalar / Atualizar mod**.
+4. Em **Conexão LAN**, use **auto** no adaptador local ou um IPv4 pertencente a este PC. Host/destinos são os endereços dos participantes; não copie o IP do host para o adaptador do cliente.
+5. Configure o perfil e use **Iniciar jogo**. O mesmo aplicativo atende host e clientes; criar ou entrar na sala continua sendo feito dentro do jogo.
 
-O instalador preserva configurações, perfis, loadouts e estatísticas, faz backup dos arquivos substituídos e não altera `Blur.exe`. A instalação pode ser movida para outra pasta; os caminhos não são fixos.
+A instalação cria backup e verifica hashes, preservando preferências, perfil, INI, loadouts e estatísticas. Não altera `Blur.exe` e não fixa a pasta de instalação. Atualize todos os participantes para a mesma versão.
 
-## Janela adaptável
+## Novidades da versão 2.1.0
 
-- Abre em **800×600**, centralizada e sem maximizar. Em monitores menores, limita o tamanho inicial à área útil deixando uma margem.
-- Arraste qualquer borda ou canto para redimensionar; os controles se ajustam sem barras de rolagem.
-- Em **Configurações**, escolha **800×600** ou **1024×768**, respeitando a área útil do monitor.
-- Em janelas estreitas, a barra lateral e os atalhos usam ícones. Passe o mouse para ver os nomes.
-- Cenário noturno, logo original de Blur e crédito discreto **Developed By: Treex™**.
+- Loader nativo **v4.2 ADAPTER-FIX**: corrige a cópia de 648 bytes em estruturas de adaptadores de 640 bytes que podia criar um ciclo infinito ao abrir a LAN. O caso foi reproduzido em teste e o usuário confirmou a entrada na LAN no notebook afetado após a correção.
+- Instalação independente a partir do jogo base, com bootstrap Lua próprio e compatibilidade entre os objetos internos do jogo e o runtime incluído.
+- Instalações compiladas não criam `launcher.py` nem copiam fontes Python. Atualizações arquivam no backup apenas módulos antigos conhecidos do BlurMTX e seus caches, preservando scripts de terceiros e checkouts de desenvolvimento.
+- Estatísticas organizadas por botões: um bloco por vez, filtros independentes de data/ID e combate acumulado por período.
+- Mod Shop local: persistência dos quatro loadouts, incluindo Loadout 1, e proteção contra o reset nativo sobrescrever as preferências.
+- Classes misturadas e BoP local experimental; permissão de pintura LAN experimental, inclusive para lendários.
 
-## LAN e atualização do host
+## Aplicativo, perfil e LAN
 
-O campo **Adaptador local** pertence a este computador; **Host / destinos** contém os IPv4 da sala, separados por vírgula. O antigo `blur_lan.asi` foi integrado ao mod, preservando `blur_lan.ini` e fazendo backup do ASI anterior quando encontrado.
+A janela começa em 800×600, permite redimensionamento e ajusta as páginas sem rolagem. Configurações também oferece 1024×768. A interface usa Qt/PySide6, cenário noturno, logo de Blur e o crédito **Developed By: Treex™**.
 
-Novas instalações usam este link público por padrão:
+O perfil permite nome LAN e imagem local. O nome deve ter de 1 a 15 caracteres ASCII válidos. A troca de avatares entre participantes usa UDP 8081; a conferência visual entre todas as máquinas continua recomendada. O Mod Shop é salvo por cliente; não depende do host.
+
+Novas instalações ativam lendários, usam adaptador **auto**, deixam BoP/pintura experimental desativados e adotam o link público abaixo com atualização automática dos destinos:
 
 `https://raw.githubusercontent.com/thierryscruz/BLURRPD/main/blur_lan.ini`
 
-A atualização automática consulta o link ao abrir e antes de iniciar o jogo. **Atualizar agora** força uma consulta. Apenas os destinos são sincronizados; o adaptador local é preservado. Se a consulta falhar, o último INI válido é mantido. Alterações da LAN exigem reabrir o jogo.
+A consulta ocorre ao abrir e antes de iniciar o jogo. Apenas os destinos são sincronizados; o adaptador local é preservado. Links GitHub usam a API de conteúdo para evitar versões antigas do Raw em cache. Se a consulta falhar, o último INI válido é mantido. Preferências já existentes não são resetadas.
 
-Organizadores podem publicar os destinos pelo botão **Salvar conexão**: autorize o GitHub em Configurações e marque **Publicar no GitHub ao salvar** na página Conexão LAN. É necessário acesso de escrita ao repositório. O token fica no Gerenciador de Credenciais do Windows. Jogadores apenas leem o link público, sem login. Iniciar, atualizar pelo link e instalar não publicam alterações automaticamente. Não há escrita anônima.
+Organizadores com acesso de escrita podem autorizar o GitHub em Configurações e marcar **Publicar no GitHub ao salvar**. A publicação ocorre somente no salvamento explícito; jogadores apenas consultam o link, sem login. Credenciais ficam no Gerenciador de Credenciais do Windows, não no pacote. Alterações de LAN exigem reiniciar o jogo.
 
-## Regras e playlist no painel web
+## Regras e playlist
 
-- Básico e playlist na mesma tela: modo, mapa, voltas, classe, limite de tempo e rotação.
+**Painel web** abre `http://127.0.0.1:8080`. O navegador não abre sozinho ao iniciar o aplicativo. Pela LAN, `http://IP-DO-PC:8080` permite consulta; a edição é autorizada localmente.
+
+- Básico e playlist na mesma tela: modo, mapa, voltas, classe e rotação sequencial/aleatória.
 - Avançado: dano, handicap, respawn, timeout, mods/habilidades e upgrades.
 - Power-ups: oito armas, chave geral, aleatoriedade e reaparecimento.
-- Carros lendários ativados por padrão em instalações novas; preferências existentes são preservadas.
-- Mapa e voltas acompanham a rotação. Ao salvar, os valores editados no Básico prevalecem para a pista selecionada.
+- Carros: lendários, classes misturadas e opções experimentais.
 
-Use **Salvar e aplicar no lobby**. Durante uma corrida, as mudanças aguardam o retorno ao lobby livre. O host transmite as regras; os clientes não aplicam sua playlist local à sala. Atualize todos os PCs para a mesma versão. A rotação entre dois PCs ainda precisa de nova conferência no jogo.
-
-O painel abre em `http://127.0.0.1:8080`. Pela rede, `http://IP-DO-PC:8080` oferece consulta; a edição exige acesso local autorizado. O aplicativo não inicia um servidor dedicado do jogo: ele prepara a LAN e mantém o painel/coletor de estatísticas.
+Os campos do Básico acompanham a rotação confirmada. Ao salvar, as edições do Básico prevalecem para a pista selecionada; as demais mantêm suas voltas. Use **Salvar e aplicar no lobby**: mudanças durante uma corrida aguardam o retorno. O host transmite as regras; clientes não impõem sua playlist à sala.
 
 ## Estatísticas e encerramento
 
-O painel mostra corridas com ID local, resultados, nêmesis/rival, hits por piloto e confrontos da última partida. Há combate acumulado por atacante/vítima, ranking e filtros independentes de datas, ID e atacante conforme o bloco. Dados ausentes permanecem vazios.
+O coletor mantém `MTXMod/events.jsonl` e SQLite em `MTXMod/data/stats.db`, com IDs locais de partida e ingestão sem duplicação. O painel oferece histórico, resultados, nêmesis/rival, hits por piloto, confrontos da partida e totais por adversário no período. Filtros são independentes por bloco.
 
-A matriz completa de hits só é aceita quando validada. Se apenas a linha do jogador local for válida, uma corrida com dois jogadores permite registrar os dois sentidos; com três ou mais, essa captura cobre apenas confrontos envolvendo o piloto local. O painel informa a cobertura. Não há identificação por arma nem estatísticas inventadas entre jogadores remotos. A leitura nativa é limitada ao executável verificado e ao estado de resultados.
+Os dados de combate são validados antes de gravar. Com bots foi possível capturar uma matriz completa. Em algumas partidas entre humanos, o jogo fornece apenas a linha local confiável: nesse caso aparecem os confrontos envolvendo o piloto local, não os confrontos entre todos os demais. Não há sincronização central dos bancos nem identificação de armas; dados indisponíveis permanecem vazios.
 
-Os dados ficam em `MTXMod/data/stats.db`; cada PC tem seu próprio banco e seus IDs. Não há sincronização central automática de bancos. Capturas antigas sem contadores preservados não podem ser reconstruídas.
+**Iniciar jogo** inicia também o painel/coletor em segundo plano, sem janela de CMD. Mantenha o aplicativo aberto ou minimizado durante as corridas. **Encerrar painel** para o coletor; fechar o aplicativo encerra os processos da mesma instalação, sem fechar o Blur.
 
-**Mantenha o aplicativo aberto ou minimizado durante as corridas.** Fechar a aba do navegador mantém o coletor ativo; fechar o aplicativo pelo X encerra também o painel/coletor da mesma instalação. **Encerrar painel** interrompe somente o servidor/coletor. O jogo continua aberto. O servidor usa porta exclusiva para evitar instâncias duplicadas.
+## Recursos experimentais e limites
 
-## Perfil e Mod Shop
+O BoP altera escala de torque e relação final em B/C/D usando referências da classe A, preservando os demais campos de física. Continua experimental: equivalência de velocidade/aceleração exige calibração em pista. Todos os PCs precisam da versão atual e da opção ativada localmente; o host ainda não sincroniza esse sinalizador.
 
-Em **Perfil**, escolha nome e imagem e salve com o jogo fechado. São aceitos nomes de 1 a 15 caracteres sem acentos; a imagem é normalizada localmente para 64×64. Use nomes distintos. A troca de avatares LAN usa UDP 8081 e não altera a conta ou a imagem do site AMAX. **Usar perfil original** desativa a personalização. A exibição de nome/avatar entre dois PCs ainda precisa de validação no jogo.
+A opção de pintura libera a permissão na garagem LAN; materiais especiais podem não responder. A mudança visual nos lendários ainda não foi confirmada. Solo sem bots e melhorias de bots permanecem fora do escopo. O catálogo completo ainda exige conferência de todas as rotas/modos.
 
-O Mod Shop salva os três loadouts personalizados e a seleção ativa por cliente em `MTXMod/loadouts.local.txt`. Os slots são restaurados; nomes personalizados dos loadouts não são restaurados. A persistência foi testada automaticamente, mas o ciclo de fechar/reabrir o cliente ainda precisa de confirmação no jogo.
+O carregador depende do executável Blur 1.2 verificado. Outras versões exigem mapeamento. O aplicativo não é assinado digitalmente; o SmartScreen pode continuar avisando.
 
-## Limites e compatibilidade
+## Arquivos e licenças
 
-- Liberar classes A/B/C/D juntas não aplica nivelamento de velocidade/aceleração (BoP).
-- Melhorias de bots, Discord e correção do modo solo sem bots estão fora do escopo atual.
-- Alguns mapas/combinações, lendários, perfis e sincronização LAN ainda exigem teste no jogo. Testes automatizados não substituem essa validação.
-- O executável não tem assinatura Authenticode; o SmartScreen pode mostrar aviso de aplicativo desconhecido.
-- Licenças do Qt/PySide6 e referências de código-fonte ficam em `MTXMod/licenses` após a primeira abertura. A [logo de Blur](https://www.steamgriddb.com/logo/155671) e as marcas pertencem aos respectivos titulares.
+O ZIP público contém somente `BlurMTX.exe` e este README. Após instalar, Lua/HTML/configurações, bibliotecas e licenças ficam externos porque são recursos usados pelo jogo e pelo painel. Não há arquivos Python de código-fonte soltos numa instalação compilada limpa. Empacotamento não equivale a criptografia ou proteção contra engenharia reversa.
 
-Os pacotes não incluem o jogo, AMAX, tokens, IPs locais, perfis pessoais, bancos, logs ou backups. Confira os arquivos baixados com `SHA256SUMS.txt` na release.
+Qt/PySide6/Shiboken são distribuídos sob suas licenças; Lua 5.1.5 sob MIT. Avisos, textos e referências de origem ficam em `MTXMod/licenses`. Não há redistribuição de plugins AMAX originais, dados de partida, credenciais ou arquivos do jogo.

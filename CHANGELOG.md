@@ -1,3 +1,17 @@
+# BlurMTX v2.1.0 — 30/10/2026
+
+- Loader v4.2: corrige a incompatibilidade de tamanho de IP_ADAPTER_INFO no Windows x86 (648/640 bytes), que corrompia a lista e travava o menu LAN. Reprodução automatizada e confirmação no notebook afetado.
+- Bootstrap independente: instala a partir do jogo base, sem AMAX; compatibilidade das sentinelas Lua coberta por regressão.
+- Remove a criação do launcher.py no instalador compilado. Arquiva fontes/caches antigos conhecidos com backup e rollback; preserva scripts de terceiros.
+- Estatísticas em blocos selecionáveis, filtros independentes, múltiplos rivais e cobertura explícita da coleta parcial.
+- Persistência do Mod Shop inclui os quatro loadouts e repara resets sem salvar padrões por cima das escolhas.
+- BoP e pintura LAN disponibilizados como experimentais, desativados por padrão. BoP precisa de ativação em cada PC e calibração; pintura visual nos lendários ainda pendente.
+
+Validação: suíte Python/Qt/JS/Lua/C, teste de ABI com três adaptadores e proteção do buffer, ZIP compilado fora do checkout, instalação limpa/atualização e encerramento dos processos. O pacote público não contém fontes Python nem dados pessoais; Lua/HTML são recursos externos necessários.
+
+
+---
+
 # BlurMTX v2.0.0 — 28/10/2026
 
 - Racing Control Center migrado para Qt/PySide6, com cenário noturno e logo original de Blur.
