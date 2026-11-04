@@ -1,3 +1,18 @@
+# BlurMTX v2.2.0-preview.2 — 04/11/2026
+
+- Validador automático por version.txt público: compara versões em segundo plano, mostra Client desatualizado e habilita Atualizar Client. Falhas de rede não informam falsamente que o client está atualizado.
+- Atualizador pela release estável do GitHub com download limitado, SHA-256, verificação do executável, backup, espera dos processos antigos, atualização da DLL e reabertura.
+- Ao iniciar o jogo, o aplicativo fica na bandeja mantendo o coletor ativo; o ícone permite restaurar a interface, abrir a web e encerrar o aplicativo.
+- Avatares: transporte em pacotes menores, reagrupamento e revisão contra imagens antigas, slots pendentes corrigidos, nomes sem distinção de caixa e prevenção de concorrência com o antigo amax_pfp.
+- Hits: resultados gravados enquanto a tela está aberta, repetição de captura incompleta e troca de linhas locais entre PCs pela UDP 8082. Associação por corrida, remapeamento de referências, persistência, deduplicação e indicação de divergências/pilotos sem dados.
+- Pintura LAN, incluindo lendários, confirmada pelo usuário.
+
+Validação: Python/Qt/JS/Lua/C, três participantes simulados com relógios/IDs distintos, instalação limpa/atualização, ausência de fontes Python externas, encerramento do coletor e substituição real do próprio EXE/DLL em uma instalação isolada.
+
+Pendente: confirmar estabilidade visual dos avatares e cobertura dos hits em uma corrida LAN real com TODOS os PCs atualizados. Esta entrega é uma prévia. A versão estável anunciada em version.txt continua sendo 2.1.0.
+
+---
+
 # BlurMTX v2.1.0 — 30/10/2026
 
 - Loader v4.2: corrige a incompatibilidade de tamanho de IP_ADAPTER_INFO no Windows x86 (648/640 bytes), que corrompia a lista e travava o menu LAN. Reprodução automatizada e confirmação no notebook afetado.

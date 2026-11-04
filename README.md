@@ -1,5 +1,7 @@
 # BlurMTX v2.1.0 — Racing Control Center
 
+**[Prévia 2.2.0-preview.2 para teste](https://github.com/thierryscruz/BlurMTX/releases/tag/v2.2.0-preview.2)** — inclui bandeja, atualizador, aviso automático de versão e correções de avatares/hits. A validação em LAN real está pendente.
+
 **[Baixar BlurMTX v2.1.0 para Windows](https://github.com/thierryscruz/BlurMTX/releases/tag/v2.1.0)**
 
 Aplicativo para instalar e iniciar o Blur com integração LAN, perfil local, regras de corrida, playlist e estatísticas web. O pacote Windows inclui Python, Qt e o runtime Lua necessário; não exige AMAX Emu nem plugins copiados de outra máquina. O jogo e seus dados não acompanham a distribuição.
