@@ -69,3 +69,10 @@ O carregador depende do executável Blur 1.2 verificado. Outras versões exigem 
 O ZIP público contém somente `BlurMTX.exe` e este README. Após instalar, Lua/HTML/configurações, bibliotecas e licenças ficam externos porque são recursos usados pelo jogo e pelo painel. Não há arquivos Python de código-fonte soltos numa instalação compilada limpa. Empacotamento não equivale a criptografia ou proteção contra engenharia reversa.
 
 Qt/PySide6/Shiboken são distribuídos sob suas licenças; Lua 5.1.5 sob MIT. Avisos, textos e referências de origem ficam em `MTXMod/licenses`. Não há redistribuição de plugins AMAX originais, dados de partida, credenciais ou arquivos do jogo.
+
+
+## Controle de versao dos clients
+
+O arquivo [version.txt](https://github.com/thierryscruz/BlurMTX/blob/main/version.txt) contem somente o numero da versao estavel publicada. Clients com o validador automatico consultam esse arquivo ao abrir, mostram um aviso quando estao desatualizados e habilitam Atualizar Client. A consulta usa a API de conteudo do GitHub para evitar depender do cache do Raw.
+
+Ao publicar uma nova release, envie primeiro o executavel e SHA256SUMS.txt; depois atualize version.txt para o mesmo numero, por exemplo 2.3.0. O instalador continua validando os arquivos da release antes de aplica-los. Mudar apenas o numero nao disponibiliza um executavel novo. Clients antigos que ainda nao possuem o validador precisam instalar uma versao que o inclua.
