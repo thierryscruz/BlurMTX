@@ -1,3 +1,13 @@
+# BlurMTX v2.2.2 ? 05/11/2026
+
+- Vers?o instalada sempre vis?vel no rodap? lateral, acima de Developed By: Treex?, inclusive na janela compacta.
+- Avisos antigos de falha n?o reaparecem como se uma atualiza??o tivesse falhado novamente. Registros legados e tentativas de vers?es j? instaladas ficam no hist?rico, sem alerta de abertura.
+- Novas falhas registram vers?o-alvo e hor?rio; a notifica??o aparece uma vez por tentativa. Os arquivos de diagn?stico s?o preservados.
+
+Valida??o: 23 testes Qt (incluindo layouts/redimensionamento, vers?o no rodap? e avisos antigos/novos) e 7 testes do atualizador.
+
+---
+
 # BlurMTX v2.2.1 ? 05/11/2026
 
 - Atualizador detecta outras inst?ncias usando o EXE da mesma instala??o antes de substituir arquivos. A interface orienta fechar as outras janelas/bandeja antes de baixar.
