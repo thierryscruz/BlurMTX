@@ -1,2 +1,2 @@
-0f270a59c9cd20a35754a7bde3cc3220a255dc73233bccc6c0488fe3b2efe6a8  BlurMTX.exe
-fdf60b27da4c5f6678f4d8f136b5356ebbb9be788238aef0bfbd94a21876eeb8  BlurMTX-v2.1.0-Windows.zip
+4b6184af133ca2a425b5925346fb0ded306ebbdda6c6aec4b700e1ddcbe14cf2  BlurMTX.exe
+447363f726832f6c76c1e811df36ba92b8a2cad9e5602f7120290cba80b716b7  BlurMTX-v2.2.0-Windows.zip

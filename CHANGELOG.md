@@ -1,3 +1,15 @@
+# BlurMTX v2.2.0 ? 05/11/2026
+
+- ID persistente por client: mudar o nome e reiniciar o jogo mant?m a identidade nas estat?sticas. Ranking, recordes e combate acumulado agrupam por ID; detalhes das corridas preservam o nome original.
+- Primeiro cadastro sem ID: backup da base SQLite e do journal em `MTXMod/backup/identity_<UUID>/`, seguido de limpeza da telemetria local. O journal antigo n?o ? reimportado. Configura??es, avatar, Mod Shop e saves s?o preservados. Atualiza??es posteriores mant?m o ID e os novos dados.
+- Identidade enviada pela LAN UDP 8082 mesmo sem hits; associa??o por partida, participantes e hor?rio, com rejei??o de conflitos. Todos os PCs precisam atualizar. N?o ? autentica??o nem identifica??o de hardware.
+- Inclui bandeja ao iniciar o jogo, atualiza??o pela release p?blica e aviso autom?tico de Client desatualizado via version.txt.
+- Inclui corre??es de avatares e compartilhamento de hits da pr?via. O usu?rio confirmou imagens estabilizadas e estat?sticas aparentemente normais em LAN; a contagem completa ainda exige confer?ncia controlada.
+
+Valida??o: testes de renomea??o, nomes iguais em IDs diferentes, soma de hits entre corridas, backup/limpeza ?nica, recusa de ID corrompido e troca LAN simulada. Instala??o e atualiza??o do execut?vel s?o verificadas em pastas isoladas antes da publica??o. BoP permanece experimental e exige ativa??o em todos os PCs.
+
+---
+
 # BlurMTX v2.2.0-preview.2 — 04/11/2026
 
 - Validador automático por version.txt público: compara versões em segundo plano, mostra Client desatualizado e habilita Atualizar Client. Falhas de rede não informam falsamente que o client está atualizado.
