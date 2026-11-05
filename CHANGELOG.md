@@ -1,3 +1,11 @@
+# BlurMTX v2.2.1 ? 05/11/2026
+
+- Atualizador detecta outras inst?ncias usando o EXE da mesma instala??o antes de substituir arquivos. A interface orienta fechar as outras janelas/bandeja antes de baixar.
+- O worker tamb?m confere os processos ap?s aguardar a inst?ncia que iniciou a atualiza??o. Se outra c?pia continuar aberta, cancela antes de alterar o mod, com mensagem clara, em vez de WinError 32.
+- Falha n?o abre mais uma c?pia do aplicativo quando outra inst?ncia j? est? ativa. N?o encerra processos automaticamente nem interfere em outras instala??es.
+
+---
+
 # BlurMTX v2.2.0 ? 05/11/2026
 
 - ID persistente por client: mudar o nome e reiniciar o jogo mant?m a identidade nas estat?sticas. Ranking, recordes e combate acumulado agrupam por ID; detalhes das corridas preservam o nome original.

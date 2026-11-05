@@ -1,16 +1,18 @@
-# BlurMTX v2.2.0 ? Racing Control Center
+# BlurMTX v2.2.1 ? Racing Control Center
 
-**[Baixar BlurMTX v2.2.0 para Windows](https://github.com/thierryscruz/BlurMTX/releases/tag/v2.2.0)**
+**[Baixar BlurMTX v2.2.1 para Windows](https://github.com/thierryscruz/BlurMTX/releases/tag/v2.2.1)**
 
 Aplicativo para instalar e iniciar o Blur, configurar LAN e perfil, organizar corridas e consultar estat?sticas. Funciona a partir do jogo base, sem exigir AMAX Emu. Jogo e dados originais n?o acompanham o pacote.
 
 ## Instala??o e atualiza??o
 
 1. Feche o Blur e o BlurMTX em cada PC.
-2. Baixe `BlurMTX-v2.2.0-Windows.zip`, extraia e execute `BlurMTX.exe`.
+2. Baixe `BlurMTX-v2.2.1-Windows.zip`, extraia e execute `BlurMTX.exe`.
 3. Selecione a pasta com `Blur.exe` e clique em **Instalar / Atualizar mod**.
 4. Configure conex?o e perfil. Use **Iniciar jogo**; o aplicativo fica na bandeja mantendo a coleta ativa. Todos os PCs devem atualizar e manter o aplicativo aberto/minimizado.
 5. Clientes que j? possuem o atualizador podem usar **Atualizar Client** quando o aviso aparecer. O download confere SHA-256, faz backup, atualiza o EXE e o mod e reabre o aplicativo.
+
+Se houver outra janela do BlurMTX aberta na mesma pasta, feche-a tamb?m, inclusive na bandeja. O atualizador detecta essas inst?ncias e n?o for?a seu encerramento.
 
 ## ID fixo e primeiro cadastro
 
