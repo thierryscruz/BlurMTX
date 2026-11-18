@@ -1,3 +1,19 @@
+# BlurMTX 2.3.0-tunnel.10 - pre-lancamento - 18/11/2026
+
+- Conexao unificada LAN/INTERNET e selecao Client/Host, com Quick Tunnel opcional.
+- Host utiliza cloudflared do sistema; Client conecta pelo link sem instalar o conector.
+- Publicacao do link no campo [Internet] RoomURL do INI compartilhado, independente dos IPs LAN.
+- Validacao da versao instalada, aviso de conector ausente e preservacao dos tuneis de outros servicos.
+- Inicializar na LAN opcional, desmarcado por padrao; abertura, Skip, multiplayer e menu LAN automaticos, sem entrar em sala.
+- Abertura personalizada Bink 1 embutida no EXE e instalada com backup e rollback.
+
+Validacao: 138 testes Python; 11 suites Lua; instalacao compilada em pasta limpa/realocada; abertura real ate o menu LAN sem cliques. Ponte publica validada com mensagens UDP; corrida completa pela internet ainda experimental.
+
+Distribuicao: prerelease, download manual. version.txt e release Latest permanecem em 2.2.2; esta previa nao e anunciada pelo atualizador estavel.
+
+
+---
+
 # BlurMTX v2.2.2 ? 05/11/2026
 
 - Vers?o instalada sempre vis?vel no rodap? lateral, acima de Developed By: Treex?, inclusive na janela compacta.
