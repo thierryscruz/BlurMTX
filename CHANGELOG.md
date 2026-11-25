@@ -1,3 +1,15 @@
+## BlurMTX 2.3.0 para Windows
+
+- Ajusta a transicao para a largada, preservando a funcao nativa SetContextTable e suspendendo a atualizacao de avatares durante o carregamento e a corrida.
+- Inclui os botoes Conectar e Tentar novamente no cliente e evita o conflito com a porta UDP 50001 usada pelo AnyDesk.
+- Corrige o encerramento do aplicativo a partir da bandeja e encerra os servicos associados.
+- Mantem a opcao de iniciar no menu LAN.
+
+Baixe o ZIP, extraia e execute o BlurMTX.exe. Para testar o Quick Tunnel, instale esta mesma versao no host e nos clientes. O modo Internet segue experimental.
+
+
+---
+
 # BlurMTX 2.3.0-tunnel.10 - pre-lancamento - 18/11/2026
 
 - Conexao unificada LAN/INTERNET e selecao Client/Host, com Quick Tunnel opcional.

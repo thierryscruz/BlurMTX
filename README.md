@@ -2,25 +2,18 @@
 
 Instale o mod, inicie o Blur, configure a conexão e o perfil, organize corridas e consulte estatísticas. Funciona a partir do jogo base compatível, sem exigir AMAX Emu. O jogo não acompanha o pacote.
 
-## Versões disponíveis
-
-| Canal | Versão | Download |
-| --- | --- | --- |
-| Estável | **2.2.2** | [Baixar versão estável](https://github.com/thierryscruz/BlurMTX/releases/tag/v2.2.2) |
-| Pré-lançamento | **2.3.0-tunnel.10** | [Baixar prévia para testes](https://github.com/thierryscruz/BlurMTX/releases/tag/v2.3.0-tunnel.10) |
-
-**A prévia é instalada manualmente.** O `version.txt` e a release Latest continuam em **2.2.2**. A publicação experimental não aciona o aviso de atualização dos clientes existentes.
+**[Baixar BlurMTX v2.3.0 para Windows](https://github.com/thierryscruz/BlurMTX/releases/tag/v2.3.0)**
 
 ## Instalação
 
 1. Feche o Blur e todas as instâncias do BlurMTX, inclusive na bandeja.
-2. Baixe o ZIP da versão escolhida, extraia e execute `BlurMTX.exe`.
+2. Baixe o ZIP da versão 2.3.0, extraia e execute `BlurMTX.exe`.
 3. Selecione a pasta que contém `Blur.exe` e clique em **Instalar / Atualizar mod**.
 4. Configure conexão e perfil e use **Iniciar jogo**. Mantenha o BlurMTX aberto ou minimizado durante as partidas.
 
 Use o mesmo pacote em todos os PCs participantes. O instalador faz backup dos arquivos substituídos e preserva configurações e dados locais.
 
-## Prévia 2.3.0-tunnel.10
+## Novidades da versão 2.3.0
 
 - Card **Conexão** com seleção **LAN / INTERNET** e **Client / Host**. LAN continua sendo o padrão.
 - Internet experimental por Quick Tunnel: o Host usa o `cloudflared` do sistema; quem entra como Client precisa apenas do link completo da sala. Sem WARP, conta ou domínio.
@@ -29,9 +22,8 @@ Use o mesmo pacote em todos os PCs participantes. O instalador faz backup dos ar
 - Abertura personalizada de 10 segundos em 720p com áudio, embutida no EXE e instalada com backup dos vídeos anteriores.
 - Conferência da versão instalada e aviso com download oficial quando o Host não possui `cloudflared`.
 
-**Limites do teste:** a ponte transporta UDP do jogo. Uma corrida completa entre PCs pela internet ainda precisa ser validada; avatares, IDs e hits entre coletores pela internet ainda não são encaminhados. Os recursos de LAN permanecem disponíveis. Compartilhe o link completo, incluindo `#mtx=...`, somente com os participantes.
+**Limites do teste:** a ponte transporta UDP do jogo. O Quick Tunnel continua experimental. Avatares, IDs e hits entre coletores pela internet ainda não são encaminhados. Os recursos de LAN permanecem disponíveis. Compartilhe o link completo, incluindo `#mtx=...`, somente com os participantes.
 
-Validação da prévia: 138 testes Python, 11 suítes Lua, instalação compilada em pasta limpa e realocada, transporte público de mensagens e abertura real até o menu LAN sem cliques.
 
 ## Perfil e estatísticas
 
